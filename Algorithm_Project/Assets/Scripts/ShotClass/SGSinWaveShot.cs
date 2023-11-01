@@ -38,7 +38,7 @@ public class SGSinWaveShot : SGBaseShot
             return;
         }
         delayTimer -= SGTimer.Instance.deltaTime;
-        while (delayTimer <= 0)             //ÃÑ¾Ë µô·¹ÀÌ°¡ ´Ù µÉ°æ¿ì
+        while (delayTimer < 0)             //ÃÑ¾Ë µô·¹ÀÌ°¡ ´Ù µÉ°æ¿ì
         {
             for (int i = 0; i < wayNum; i++)
             {
